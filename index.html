@@ -468,8 +468,54 @@ function renderHistoryChart(){
 }
 
 
-const FLAGS={"México":"🇲🇽","Brasil":"🇧🇷","Argentina":"🇦🇷","Francia":"🇫🇷","España":"🇪🇸","Alemania":"🇩🇪","Portugal":"🇵🇹","Países Bajos":"🇳🇱","Bélgica":"🇧🇪","Croacia":"🇭🇷","Italia":"🇮🇹","Estados Unidos":"🇺🇸","Canadá":"🇨🇦","Japón":"🇯🇵","Corea del Sur":"🇰🇷","Uruguay":"🇺🇾","Colombia":"🇨🇴","Ecuador":"🇪🇨","Marruecos":"🇲🇦","Suiza":"🇨🇭","Dinamarca":"🇩🇰","Serbia":"🇷🇸","Polonia":"🇵🇱","Australia":"🇦🇺","Nueva Zelanda":"🇳🇿","República Checa":"🇨🇿","Noruega":"🇳🇴"};
-
+/*const FLAGS={"México":"🇲🇽","Brasil":"🇧🇷","Argentina":"🇦🇷","Francia":"🇫🇷","España":"🇪🇸","Alemania":"🇩🇪","Portugal":"🇵🇹","Países Bajos":"🇳🇱","Bélgica":"🇧🇪","Croacia":"🇭🇷","Italia":"🇮🇹","Estados Unidos":"🇺🇸","Canadá":"🇨🇦","Japón":"🇯🇵","Corea del Sur":"🇰🇷","Uruguay":"🇺🇾","Colombia":"🇨🇴","Ecuador":"🇪🇨","Marruecos":"🇲🇦","Suiza":"🇨🇭","Dinamarca":"🇩🇰","Serbia":"🇷🇸","Polonia":"🇵🇱","Australia":"🇦🇺","Nueva Zelanda":"🇳🇿","República Checa":"🇨🇿","Noruega":"🇳🇴"};*/
+const FLAGS = {
+  "Alemania":"🇩🇪",
+  "República Checa":"🇨🇿",
+  "Francia":"🇫🇷",
+  "Irán":"🇮🇷",
+  "Corea del Sur":"🇰🇷",
+  "Bosnia y Herzegovina":"🇧🇦",
+  "Países Bajos":"🇳🇱",
+  "Marruecos":"🇲🇦",
+  "Colombia":"🇨🇴",
+  "Croacia":"🇭🇷",
+  "España":"🇪🇸",
+  "Austria":"🇦🇹",
+  "Estados Unidos":"🇺🇸",
+  "Suiza":"🇨🇭",
+  "Bélgica":"🇧🇪",
+  "Escocia":"🏴",
+  "Brasil":"🇧🇷",
+  "Japón":"🇯🇵",
+  "Ecuador":"🇪🇨",
+  "Noruega":"🇳🇴",
+  "México":"🇲🇽",
+  "Costa de Marfil":"🇨🇮",
+  "Inglaterra":"🏴",
+  "Argentina":"🇦🇷",
+  "Uruguay":"🇺🇾",
+  "Paraguay":"🇵🇾",
+  "Egipto":"🇪🇬",
+  "Canadá":"🇨🇦",
+  "Suecia":"🇸🇪",
+  "Portugal":"🇵🇹",
+  "Turquía":"🇹🇷",
+  "Catar":"🇶🇦",
+  "Sudáfrica":"🇿🇦",
+  "Senegal":"🇸🇳",
+  "Argelia":"🇩🇿",
+  "Ghana":"🇬🇭",
+  "Nueva Zelanda":"🇳🇿",
+  "República Democrática del Congo":"🇨🇩",
+  "Curazao":"🇨🇼",
+  "Cabo Verde":"🇨🇻",
+  "Australia":"🇦🇺",
+  "Panamá":"🇵🇦",
+  "Benín":"🇧🇯",
+  "Uzbekistán":"🇺🇿",
+  "Arabia Saudita":"🇸🇦"
+};
 function renderQualifiedTeams(){
  var grouped={};
  state.realResults.forEach(function(r){
