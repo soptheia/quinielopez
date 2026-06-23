@@ -441,7 +441,7 @@ function renderHistoryChart(){
  if(!c||typeof Chart==='undefined') return;
  if(window.histChart) window.histChart.destroy();
  var stages=['16vos','8vos','4tos','Semifinal','4to lugar','3er lugar','Subcampeon','Campeon'];
- var top=state.resumen.slice(0,5).map(x=>x.Jugador);
+ var top=state.resumen.slice(0,15).map(x=>x.Jugador);
  var datasets=top.map(function(player){
    var acc=0;
    var vals=[];
