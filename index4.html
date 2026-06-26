@@ -530,28 +530,28 @@ function renderQualifiedTeams(){
    else{
       teams.forEach(function(team){
 
-    html += '
-        <div class="team-item"
-             style="display:flex;
-                    justify-content:space-between;
-                    align-items:center;
-                    gap:8px;">
+html += `
+<div class="team-item"
+     style="display:flex;
+            justify-content:space-between;
+            align-items:center;
+            gap:8px;">
 
-            <span>
-                ${FLAGS[team.equipo] || '⚽'}
-                ${team.equipo}
-            </span>
+    <span>
+        ${FLAGS[team.equipo] || '⚽'}
+        ${team.equipo}
+    </span>
 
-            <span style="
-                color:var(--gold);
-                font-size:11px;
-                font-weight:bold;
-                white-space:nowrap;">
-                ${team.lugar}
-            </span>
+    <span style="
+        color:var(--gold);
+        font-size:11px;
+        font-weight:bold;
+        white-space:nowrap;">
+        ${team.lugar}
+    </span>
 
-        </div>
-    ';
+</div>
+`;
 
 });
    }
